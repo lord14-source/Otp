@@ -18,6 +18,7 @@ public class OtpServiceDao implements OtpService{
         otp.setRefNo(UUID.randomUUID().toString());
         System.out.println(otp.getUuid());
         otpRepo.save(otp);
+        System.out.println("here");
         return "Success";
 
 
